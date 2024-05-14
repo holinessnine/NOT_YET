@@ -1,0 +1,117 @@
+/* APP 기본 설정 */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 메인 화면 꾸미기 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(39, 39, 39); /* 배경색 설정 */
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 40px;
+}
+
+.address {
+  font-size: 15px;
+  color: rgba(238, 238, 238, 0.89);
+  text-align: center; /* 중간 정렬을 위해 추가 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container {
+  display: flex;
+  margin-top: 60px;
+  height: calc(100vh - 60px);
+}
+
+.map-container {
+  width: 70%;
+  height: 100%; 
+}
+
+.list-view {
+  width: 30%;
+  height: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  border-left: 1px solid #ddd;
+}
+
+.text-light {
+  color: rgb(238, 238, 238); /* 밝은 글씨 색 설정 */
+  margin-left: 5px;
+  font-size: 17px; /* 로고 이미지와 텍스트 사이에 여백 추가 */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  display: flex; /* Flexbox로 설정 */
+  flex-direction: row;
+  margin-bottom: 15px;
+  max-width: 100%;
+  border-bottom: 1px solid #ddd; /* 카드 하단에 회색 경계 추가 */
+}
+
+.card img {
+  width: 30%; /* 3:7 비율 설정 */
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-body {
+  width: 70%; /* 3:7 비율 설정 */
+  padding: 10px;
+}
