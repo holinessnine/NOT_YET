@@ -99,19 +99,33 @@
 .card {
   display: flex; /* Flexbox로 설정 */
   flex-direction: row;
-  margin-bottom: 15px;
   max-width: 100%;
   border-bottom: 1px solid #ddd; /* 카드 하단에 회색 경계 추가 */
+}
+.card-expanded {
+  background-color: #ddd; /* 회색 배경색 */
 }
 
 .card img {
   width: 30%; /* 3:7 비율 설정 */
   height: auto;
   object-fit: cover;
-  margin-bottom: 15px;
+  padding: 10px;
 }
 
 .card-body {
   width: 70%; /* 3:7 비율 설정 */
   padding: 10px;
+}
+
+.expanded-view {
+  position: absolute;
+  top: 0;
+  right: 34.15%;
+  width: 35%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-left: 1px solid #ddd;
+  z-index: 500;
+  overflow-y: auto;
 }
